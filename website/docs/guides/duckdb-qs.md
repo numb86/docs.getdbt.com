@@ -38,7 +38,7 @@ You can learn more through high-quality [dbt Learn courses and workshops](https:
 - [Schedule a job](/guides/manual-install?step=5)
 
 
-### Prerequisites
+## Prerequisites
 
 - When using DuckDB with dbt Core, you'll need to use the dbt command-line interface (CLI). Currently, DuckDB is not supported in dbt Cloud.
 - It's important that you know some basics of the terminal. In particular, you should understand `cd`, `ls` , and `pwd` to navigate through the directory structure of your computer easily.
@@ -71,12 +71,12 @@ For more information on the setup of DuckDB, you can refer to [DuckDB setup](/do
 
 <TabItem value="local" label="Local">
 
-1. First, [clone](https://git-scm.com/docs/git-clone/en) the Jaffle Shop git repository by running the following command in your terminal:
+1. First, [clone](https://git-scm.com/docs/git-clone) the Jaffle Shop git repository by running the following command in your terminal:
 
 
 
     ```bash
-    git clone https://github.com.dbt-labs/jaffle_shop_duckdb.git
+    git clone https://github.com/dbt-labs/jaffle_shop_duckdb.git
 
     ```
 
@@ -165,10 +165,8 @@ Here's what a successful output will look like:
 15:10:15  Completed successfully
 15:10:15  
 15:10:15  Done. PASS=28 WARN=0 ERROR=0 SKIP=0 TOTAL=28
-
-```
-
-    For complete details, refer to the [dbt command reference](/reference/dbt-commands).
+    
+For complete details, refer to the [dbt command reference](/reference/dbt-commands).
 
 :::note
 
@@ -179,9 +177,7 @@ The steps will fail if you decide to run this project in your data warehouse (ou
 
 ### Troubleshoot
 
-
-
-   <Expandable alt_header="Could not set lock on file error" >
+    <Expandable alt_header="Could not set lock on file error" >
 
     ```Jinja
 
@@ -193,14 +189,14 @@ The steps will fail if you decide to run this project in your data warehouse (ou
 
     As a last resort, deleting the database file will get you back in action (_but_ you will lose all your data).
 
-   </Expandable>
+    </Expandable>
 
 
 </TabItem>
  
 <TabItem value="web" label="Web browser">
 
-1. Go to the `jaffle-shop-template` [repository](https://github.com/dbt-labs/jaffle-shop-template) after you log in to your GitHub account. 
+1. Go to the `jaffle-shop-template` [repository](https://github.com/gwenwindflower/octocatalog) after you log in to your GitHub account. 
 1. Click **Use this template** at the top of the page and choose **Create new repository**.
 1. Click **Create repository from template** when you’re done setting the options for your new repository.
 1. Click **Code** (at the top of the new repository’s page). Under the **Codespaces** tab,  choose **Create codespace on main**. Depending on how you've configured your computer's settings, this either opens a new browser tab with the Codespace development environment with VSCode running in it or opens a new VSCode window with the codespace in it. 
@@ -228,12 +224,12 @@ The steps will fail if you decide to run this project in your data warehouse (ou
 
   </TabItem>
 
-</Tabs>
+  </Tabs>
 
-```suggestion
+
 Here's what a successful output will look like:
 
-```jinja
+```Jinja
 
 (venv) ➜  jaffle_shop_duckdb git:(duckdb) dbt build
 15:10:12  Running with dbt=1.8.1

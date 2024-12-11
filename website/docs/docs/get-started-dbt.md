@@ -74,6 +74,7 @@ Refer to the following quickstarts to get started with dbt Core:
 
 - [dbt Core from a manual install](/guides/manual-install) to learn how to install dbt Core and set up a project.
 - [dbt Core using DuckDB](/guides/duckdb?step=1) to learn how to connect to DuckDB and execute the `dbt build` command.
+- [dbt Core using DuckDB (Github Codespace)](/guides/codespace?step=1) to use a pre-configued GitHub codespaces that streamlines the above quickestart's setup.
 
 ## Related docs
 <!-- use as an op to link to other useful guides when the query params pr is merged -->

@@ -165,10 +165,7 @@ If your dbt Cloud app does not have a service principal, take the following acti
 
 :::important
 
-Azure DevOps no long
-This is no longer a recommended workflow and admins using service users should [migrate](#migrate-to-service-principal) to Entra ID [service principals](https://learn.microsoft.com/en-us/entra/identity-platform/app-objects-and-service-principals) in the future. Service prinicpals are the [Microsoft recommended service account type](https://learn.microsoft.com/en-us/entra/architecture/secure-service-accounts#types-of-microsoft-entra-service-accounts) for app authentication.
-
-We strongly recommend [migrating](migrate-to-service-principal) to a service principal as soon as possible.
+Service users are no longer a recommended method for authentication and accounts using them should [migrate](#migrate-to-service-principal) to Entra ID [service principals](https://learn.microsoft.com/en-us/entra/identity-platform/app-objects-and-service-principals) in the future. Service prinicpals are the [Microsoft recommended service account type](https://learn.microsoft.com/en-us/entra/architecture/secure-service-accounts#types-of-microsoft-entra-service-accounts) for app authentication.
 
 :::
 

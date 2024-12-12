@@ -448,7 +448,7 @@ These tokens are limited to the following [scopes](https://learn.microsoft.com/e
 
 ## Add your Microsoft Entra ID app to dbt Cloud
 
-A dbt Cloud account admin needs to perform the following steps. 
+A dbt Cloud account admin must take the following actions.
 
 Once you connect your Microsoft Entra ID app and Azure DevOps, you need to provide dbt Cloud information about the app:
 

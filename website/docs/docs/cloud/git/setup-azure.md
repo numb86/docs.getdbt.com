@@ -109,11 +109,11 @@ There are two connection methods currently available for dbt Cloud and Azure Dev
 
 ## Create a service principal
 
-The apps service principal is a representation of the Entra ID application object. Whereas a service user represents a real user in Azure with an Entra ID (and an applicable license), the service principal is a secure identity used by an application to access Azure resources unattended. The service principal authenticates with a client ID and secret rather than username and password (or any other form of user auth). Service principals are the [Microsoft recommended method](https://learn.microsoft.com/en-us/entra/architecture/secure-service-accounts#types-of-microsoft-entra-service-accounts) for authenticating apps and are the default method for dbt Clouds integration with Azure DevOps. 
+The application's service principal represents the Entra ID application object. Whereas a service user represents a real user in Azure with an Entra ID (and an applicable license), the service principal is a secure identity used by an application to access Azure resources unattended. The service principal authenticates with a client ID and secret rather than a username and password (or any other form of user auth). Service principals are the [Microsoft recommended method](https://learn.microsoft.com/en-us/entra/architecture/secure-service-accounts#types-of-microsoft-entra-service-accounts) for authenticating apps. 
 
 ### Add a role to the Service Principal
 
-You can create a new role or assign an existing to the service principal app. It must have the following permissions:
+You can create a new role or assign an existing one to the service principal app. It must have the following permissions:
 
 - **Project Reader**
 - **ViewSubscriptions**
@@ -122,15 +122,17 @@ You can create a new role or assign an existing to the service principal app. It
 - **PullRequestContribute**
 - **GenericContribute**
 
-1. In your Azure account, navigate to **Subscriptions** and click on the name of the subscription with the app. 
-2. From the subscription window, click **Access control (IAM)**.
-3. From the top menu, click **Add** and click **Add role assignment**.
+In your Azure account:
+
+1. Navigate to **Subscriptions** and click on the appropriate subscription name for the application environment. 
+2. From the left-side menu of the subscription window, click **Access control (IAM)**.
+3. From the top menu, click **Add** and select **Add role assignment** from the dropdown.
 
 <Lightbox src="/img/docs/cloud-integrations/azure-subscription.png" width="60%" title="The 'Access control (IAM)' window in the 'Subscriptions' section of Azure."/>
 
 4. In the **Role** tab, select a role with appropriate permissions to assign the service principal. 
-5. Click the **Members** tab. Make sure **Assign access to** is set to **User, group, or service principal**.
-5. Click **Select members** and search for your app name in the window. Once it appears, click your app and it will appear in **Selected members** section. Click **Select**.
+5. Click the **Members** tab. You must set **Assign access to** to **User, group, or service principal**.
+6. Click **Select members** and search for your app name in the window. Once it appears, click your app, which will appear in the **Selected members** section. Click **Select** at the bottom to save your selection.
 
     <Lightbox src="/img/docs/cloud-integrations/assign-app-to-members.png" width="80%" title="The dbt Cloud ADO app in the members section."/>
 
@@ -143,11 +145,11 @@ Navigate back to the **App registrations** screen and click the app. On the left
 
 ### Migrate to service principal
 
-If your dbt Cloud app does not have a service principal:
+If your dbt Cloud app does not have a service principal, take the following actions in your Azure account:
 
-1. In Azure, navigate to **Microsoft Entra ID**.
+1. Navigate to **Microsoft Entra ID**.
 2. Under **Manage** on the left-side menu, click **App registrations**.
-3. Click the app you are using for the dbt Cloud and Azure DevOps integration.
+3. Click the app for the dbt Cloud and Azure DevOps integration.
 4. Locate the **Managed application in local directory** field and click **Create Service Principal**.
 
     <Lightbox src="/img/docs/cloud-integrations/create-service-principal.png" width="80%" title="Example of the 'Create Service Principal' option highlighted ."/>
@@ -448,7 +450,7 @@ These tokens are limited to the following [scopes](https://learn.microsoft.com/e
 
 ## Add your Microsoft Entra ID app to dbt Cloud
 
-A dbt Cloud account admin needs to perform the following steps. 
+A dbt Cloud account admin must take the following actions.
 
 Once you connect your Microsoft Entra ID app and Azure DevOps, you need to provide dbt Cloud information about the app:
 

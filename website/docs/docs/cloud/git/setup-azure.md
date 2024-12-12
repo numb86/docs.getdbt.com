@@ -97,11 +97,11 @@ If your Azure DevOps account is connected to Entra ID, then you can proceed to [
 
 <Lightbox src="/img/docs/dbt-cloud/connecting-azure-devops/connect AD to Azure DevOps.gif" title="Connecting Azure DevOps and Microsoft Entra ID"/>
 
-## Prepare the dbt Cloud connection
+## Configure the Entra ID connection
 
 There are two connection methods currently available for dbt Cloud and Azure DevOps:
-- Service principal (recommended): Create an application connection via client ID and secret for unattended authentication.
-- Service user (legacy): Create a user that will authenticate the connection with username and password. This configuration should be avoided.
+- **Service principal** (recommended): Create an application connection via client ID and secret for unattended authentication.
+- **Service user** (legacy): Create a user that will authenticate the connection with username and password. This configuration should be avoided.
 
 <Tabs>
 

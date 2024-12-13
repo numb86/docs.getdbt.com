@@ -159,11 +159,25 @@ Or, better yet, just install the package(s) you need!
 
 ### Install prereleases of dbt adapters
 
+A prerelease adapter is a version released before the final, stable version. It allows users to test new features, provide feedback, and get early access to upcoming functionality.
+
+Using a prerelease of an adapter has many benefits such as granting you early access to new features and improvements ahead of the stable release. Innovation opportunities &mdash; leverage new features to improve your work and stay competitive. As well as compatibility testing, allowing you to test the adapter in your environment to catch integration issues early, ensuring your system will be ready for the final release. 
+
+Prereleases also have some drawbacks such as performance issues as they may not be fully optimized, potentially resulting in slower performance or inefficiency. Additionally, frequent updates and patches during the prerelease phase may require extra time and effort to maintain.
+
 To install prerelease versions of dbt Core and your adapter, use this command:
 
 ```shell
 python3 -m pip install --pre dbt-core dbt-adapter-name
 ````
+
+For example, if you’re using Snowflake, you would use the command:
+
+
+```shell
+python3 -m pip install --pre dbt-core dbt-snowflake
+````
+
 We recommend you install prereleases in a [virtual Python environment](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/). For example, to install a prerelease in a `POSIX bash`/`zsh` virtual Python environment, use the following commands:
 
 ```shell
@@ -183,10 +197,22 @@ To install or use packages within your virtual environment:
 
 - Activate the virtual environment to add its specific Python and `pip` executables to your shell’s PATH. This ensures you use the environment’s isolated setup. 
 
-   Select your operating system and run the following command to activate it:
+For more information, refer to [Create and use virtual environments](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#create-and-use-virtual-environments)
 
+Select your operating system and run the following command to activate it:
 
 <Expandable alt_header="Unix/macOS" >
+
+1. Activate your virtual environment: 
+
+```shell
+source .venv/bin/activate
+which python
+venv/bin/python
+  
+  ```
+  2. Install the prerelease using the following command:
+
 
 ```shell
 python3 -m pip install --pre dbt-core dbt-adapter-name
@@ -198,6 +224,15 @@ dbt --version
 
 <Expandable alt_header="Windows" >
 
+1. Activate your virtual environment: 
+
+```shell
+py -m pip install --pre dbt-core dbt-adapter-name
+.venv\Scripts\activate
+dbt --version
+```
+2. Install the prerelease using the following command:
+
 ```shell
 py -m pip install --pre dbt-core dbt-adapter-name
 .venv\Scripts\activate
@@ -206,59 +241,11 @@ dbt --version
 
 </Expandable>
 
-<Expandable alt_header="POSIX bash/zsh" >
 
-```shell
-python3 -m pip install --pre dbt-core dbt-adapter-name
-source venv/bin/activate
-dbt --version
-```
+</VersionBlock>
 
-</Expandable>
+<VersionBlock lastVersion="1.7">
 
-<Expandable alt_header="POSIX fish" >
-
-```shell
-python3 -m pip install --pre dbt-core dbt-adapter-name
-source venv/bin/activate.fish
-```
-
-</Expandable>
-
-<Expandable alt_header="POSIX csh/tcsh" >
-
-```shell
-python3 -m pip install --pre dbt-core dbt-adapter-name
-source venv/bin/activate.csh
-```
-
-</Expandable>
-
-<Expandable alt_header="POSIX PowerShell Core" >
-
-```shell
-python3 -m pip install --pre dbt-core dbt-adapter-name
-venv/bin/Activate.ps1
-```
-
-</Expandable>
-
-<Expandable alt_header="Windows cmd.exe" >
-
-```shell
-python -m pip install --pre dbt-core dbt-adapter-name
-venv\Scripts\activate.bat
-```
-
-</Expandable>
-
-<Expandable alt_header="Windows PowerShell" >
-
-```shell
-python -m pip install --pre dbt-core dbt-adapter-name
-venv\Scripts\Activate.ps1
-```
-
-</Expandable>
+hello
 
 </VersionBlock>

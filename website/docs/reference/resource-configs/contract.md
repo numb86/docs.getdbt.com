@@ -48,6 +48,46 @@ When dbt compares data types, it will not compare granular details such as size,
 
 Note that you need to specify a varchar size or numeric scale, otherwise dbt relies on default values. For example, if a `numeric` type defaults to a precision of 38 and a scale of 0, then the numeric column stores 0 digits to the right of the decimal (it only stores whole numbers), which might cause it to fail contract enforcement. To avoid this implicit coercion, specify your `data_type` with a nonzero scale, like `numeric(38, 6)`. dbt Core 1.7 and higher provides a warning if you don't specify precision and scale when providing a numeric data type.
 
+<Expandable alt_header="Array for BigQuery">
+
+When using `config.contract.enforced: true` with nested and repeated fields in BigQuery, you must specify the `data_type` appropriately to ensure contract enforcement succeeds. 
+
+#### Key points
+1. **Top-level arrays**: For repeated fields (arrays), use the `array` data type.
+2. **Nested structures**: For repeated nested fields, simplify the `data_type` to `array` instead of specifying the full detailed type. This ensures dbt validates the schema without conflicts.
+
+#### Example: Correct YAML for nested and repeated fields
+
+```yaml
+version: 2
+
+models:
+  - name: repeated_nested
+    description: ""
+    columns:
+      - name: repeated_int
+        data_type: array
+        description: ""
+
+      - name: repeated_struct
+        data_type: array
+        description: ""
+
+      - name: repeated_struct.int_field
+        data_type: int64
+        description: ""
+
+      - name: repeated_struct.nested_repeated_struct
+        data_type: array
+        description: ""
+
+      - name: repeated_struct.nested_repeated_struct.string_field
+        data_type: string
+        description: ""
+```
+
+</Expandable>
+
 ### Example
 
 <File name='models/dim_customers.yml'>
@@ -97,7 +137,6 @@ When you `dbt run` your model, _before_ dbt has materialized it as a table in th
 20:53:45
 20:53:45    > in macro assert_columns_equivalent (macros/materializations/models/table/columns_spec_ddl.sql)
 ```
-
 
 ### Incremental models and `on_schema_change`
 

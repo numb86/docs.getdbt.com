@@ -157,7 +157,7 @@ Or, better yet, just install the package(s) you need!
 
 <VersionBlock firstVersion="1.8">
 
-### Install prereleases of dbt adapters
+### Install prereleases of dbt-adapters
 
 A prerelease adapter is a version released before the final, stable version. It allows users to test new features, provide feedback, and get early access to upcoming functionality.
 
@@ -191,7 +191,7 @@ dbt --version
 ```
 Note, this will also install any pre-releases of all dependencies.
 
-#### Install prereleases on different operating systems 
+#### Install prereleases of dbt-adapters on different operating systems 
 
 To install or use packages within your virtual environment:
 
@@ -246,6 +246,14 @@ dbt --version
 
 <VersionBlock lastVersion="1.7">
 
-hello
+### Install prereleases of dbt-adapters
+
+dbt-adapters are only compatible with dbt Core 1.8+. If you are on dbt Core v1.7 or below, follow the steps to upgrade to v1.8+ to install prereleases of dbt-adapters.
+
+```shell
+python -m pip uninstall -y dbt-adapters
+python -m pip install --upgrade dbt-core dbt-common dbt-adapters
+dbt --version
+```
 
 </VersionBlock>

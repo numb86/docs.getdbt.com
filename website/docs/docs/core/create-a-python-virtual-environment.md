@@ -1,0 +1,72 @@
+---
+title: Create a Python Virtual Environment
+id: create-a-python-virtual-environment
+description: "Instructions on creating a Python virtual environment."
+pagination_next: "docs/core/create-a-python-virtual-environment"
+pagination_prev: null
+---
+
+A Python virtual environment is an isolated workspace for Python projects. This prevents libraries and versions used in one project from interfering with others, making it especially helpful when working on multiple projects with differing requirements or avoiding conflicts with global Python installations.
+
+The Python ecosystem offers several tools for creating isolated environments, such as [conda](https://anaconda.org/anaconda/conda), [poetry](https://python-poetry.org/docs/managing-environments/), and `venv`. Among these, `venv` has the fewest additional dependencies and has been included by default in recent Python versions for quite some time.
+
+`venv` will set up a Python virtual environment within the `.venv` folder.
+
+Users who want to run dbt locally, for example in [dbt Core](/docs/core/installation-overview) or the [dbt Cloud CLI](/docs/cloud/cloud-cli-installation#install-a-virtual-environment) may want to install a Python virtual environment. 
+
+
+## Prerequisites
+
+- Have [Python](https://www.python.org/downloads/) installed on your machine. You can check if Python is installed by running `python --version` or `python3 --version` in your terminal or command prompt.
+- Have [pip installed](https://pip.pypa.io/en/stable/installation/). You can check if pip is installed by running `pip --version` or `pip3 --version`.
+- Access to a terminal or command prompt.
+- Have the necessary permissions to create directories and install packages on your machine.
+
+## Install a Python virtual environment 
+
+Depending on the operating system you use, you'll need to execute specific steps to set up a virtual environment. 
+
+To install a Python virtual environment, navigate to your project directory and execute the command. This will generate a new virtual environment within a local folder named `venv`:
+
+<Expandable alt_header="Unix/macOS" >
+
+1. Create your virtual environment
+
+```shell
+python3 -m venv .venv
+```
+
+2. Activate your virtual environment:
+
+```shell
+source .venv/bin/activate
+which python
+.venv/bin/python
+```
+</Expandable>
+
+<Expandable alt_header="Windows" >
+
+1. Create your virtual environment
+
+```shell
+py -m venv .venv
+```
+
+2. Activate your virtual environment:
+
+```shell
+.venv\Scripts\activate
+where python
+.venv\Scripts\python
+```
+
+</Expandable>
+
+## Deactivate virtual environment
+
+To switch projects or leave your virtual environment, deactivate the environment using the command while the virtual environment is active:
+
+```shell
+deactivate
+```

@@ -61,7 +61,7 @@ Additionally, you may configure the IdP attributes passed from your identity pro
 | last_name | Unspecified | user.last_name | The user's last name |
 | NameID | Unspecified | ID | The user's unchanging ID |
 
-`NameID` values can be persistent (`urn:oasis:names:tc:SAML:2.0:nameid-format:persistent`) rather than unspecified if your IdP has support for these values.  Using an email address for `NameID` will work, but results in entirely new users being created after an email address change.  It's best to configure a value that will not change even when a user's email address changes.
+`NameID` values can be persistent (`urn:oasis:names:tc:SAML:2.0:nameid-format:persistent`) rather than unspecified if your IdP supports these values.  Using an email address for `NameID` will work, but dbt Cloud creates an entirely new user if that email address changes.  Configuring a value that will not change, even if the user's email address does, is a best practice.
 
 dbt Cloud's [role-based access control](/docs/cloud/manage-access/about-user-access#role-based-access-control) relies
 on group mappings from the IdP to assign dbt Cloud users to dbt Cloud groups. To

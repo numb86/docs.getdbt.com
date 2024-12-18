@@ -346,8 +346,8 @@ From the Set up Single Sign-On with SAML page:
    | **first_name** | user.givenname |
    | **last_name** | user.surname |
 
-7. Click **Add a group claim** from User Attributes and Claims.
-8. If you'll assign users directly to the enterprise application, select **Security Groups**. If not, select **Groups assigned to the application**.
+7. Click **Add a group claim** from **User Attributes and Claims.**
+8. If you assign users directly to the enterprise application, select **Security Groups**. If not, select **Groups assigned to the application**.
 9. Set **Source attribute** to **Group ID**.
 10. Under **Advanced options**, check **Customize the name of the group claim** and specify **Name** to **groups**.
 

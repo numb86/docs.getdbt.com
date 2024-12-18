@@ -334,11 +334,11 @@ Follow these steps to set up single sign-on (SSO) with dbt Cloud:
 From the Set up Single Sign-On with SAML page:
 
 1. Click **Edit** in the User Attributes & Claims section.
-2. Click **Unique User Identifier (Name ID)** under "Required claim."
+2. Click **Unique User Identifier (Name ID)** under **Required claim.**
 3. Set **Name identifier format** to **Unspecified**.
 4. Set **Source attribute** to **user.objectid**.
-5. Delete all claims under "Additional claims."
-6. Click **Add new claim** and add these three new claims:
+5. Delete all claims under **Additional claims.**
+6. Click **Add new claim** and add the following new claims:
 
    | Name | Source attribute |
    | ----- | ----- |

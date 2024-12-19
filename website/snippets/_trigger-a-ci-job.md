@@ -1,0 +1,2 @@
+If you're not using dbt Cloud’s native Git integration with [GitHub](/docs/cloud/git/connect-github), [GitLab](/docs/cloud/git/connect-gitlab), or [Azure DevOps](/docs/cloud/git/connect-azure-devops), you can use the [Administrative API](/docs/dbt-cloud-apis/admin-cloud-api) to trigger a CI job to run. However, dbt Cloud will not automatically delete the temporary schema for you. This is because automatic deletion relies on incoming webhooks from Git providers, which is only available through the native integrations.
+

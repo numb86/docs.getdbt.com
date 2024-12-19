@@ -34,4 +34,10 @@ pagination_prev: null
     link="/docs/cloud/git/connect-azure-devops"
     icon="dbt-bit"/>
 
+<Card
+    title="Git providers who support CI"
+    body="Learn which Git providers support CI"
+    link="/docs/deploy/continuous-integration#git-providers-who-support-ci"
+    icon="dbt-bit"/>
+
 </div>

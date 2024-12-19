@@ -1,6 +1,6 @@
 ---
 title: "Why I wish I had a control plane for my renovation"
-description: "A control plane is a set of tools and processes that enable you to manage and automate the deployment of your software. It's a way to ensure that your software is deployed in a consistent and predictable way, and that it's always up to date."
+description: "When I think back to my renovation, I realize how much smoother it would have been if I’d had a control plane for the entire process."
 slug: wish-i-had-a-control-plane-for-my-renovation
 
 authors: [mark_wan]
@@ -12,7 +12,7 @@ date: 2024-12-22
 is_featured: true
 ---
 
-When my wife and I renovated our home, we chose to take on the role of owner-builder. It was a bold (and mostly naïve) decision, but we wanted control over every aspect of the project. What we didn’t realize was just how complex and exhausting managing so many moving parts would be.
+When my wife and I renovated our home, we chose to take on the role of owner-builder. It was a bold (and mostly naive) decision, but we wanted control over every aspect of the project. What we didn’t realize was just how complex and exhausting managing so many moving parts would be.
 
 <Lightbox src="/img/blog/2024-12-22-why-i-wish-i-had-a-control-plane-for-my-renovation/control-plane.png" width="70%" title="My wife pondering our sanity" />
 
@@ -38,7 +38,7 @@ So what should have been quick, collaborative conversations turned into drawn-ou
 
 - The **architects** are the engineers &mdash; designing how the pieces fit together.
 - The **architectural plans** are your dbt code &mdash; the models, tests, and configurations that define what your data should look like.
-- The **builders** are the compute layers (e.g., Snowflake, BigQuery, or Databricks) that execute those transformations.
+- The **builders** are the compute layers (for example, Snowflake, BigQuery, or Databricks) that execute those transformations.
 - The **inspectors** are the monitoring tools, which focus on retrospective insights like logs, job performance, and error rates.
 
 Here’s the challenge: monitoring tools, by their nature, look backward. They’re great at telling you what happened, but they don’t help you plan or declare what should happen. And when these roles &mdash; plans, execution, and monitoring &mdash; are siloed, teams are left trying to manually stitch them together, often wasting time troubleshooting issues or coordinating workflows.

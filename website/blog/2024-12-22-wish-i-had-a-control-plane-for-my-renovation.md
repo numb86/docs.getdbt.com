@@ -1,6 +1,6 @@
 ---
 title: "Why I wish I had a control plane for my renovation"
-description: "When I think back to my renovation, I realize how much smoother it would have been if I’d had a control plane for the entire process."
+description: "When I think back to my renovation, I realize how much smoother it would've been if I’d had a control plane for the entire process."
 slug: wish-i-had-a-control-plane-for-my-renovation
 
 authors: [mark_wan]

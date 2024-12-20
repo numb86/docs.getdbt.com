@@ -1,5 +1,5 @@
 ---
-title: Create a Python Virtual Environment
+title: Create a Python virtual environment
 id: create-a-python-virtual-environment
 description: "Instructions on creating a Python virtual environment."
 pagination_next: "docs/core/create-a-python-virtual-environment"

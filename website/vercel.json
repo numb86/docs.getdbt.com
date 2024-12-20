@@ -3,22 +3,22 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/guides/codespace?step=4",
+      "source": "/guides/codespace-qs?step=4",
       "destination": "/guides/duckdb?step=3",
       "permanent": true
     },
     {
-      "source": "/guides/codespace?step=3",
+      "source": "/guides/codespace-qs?step=3",
       "destination": "/guides/duckdb?step=2",
       "permanent": true
     },
     {
-      "source": "/guides/codespace?step=2",
+      "source": "/guides/codespace-qs?step=2",
       "destination": "/guides/duckdb?step=1",
       "permanent": true
     },
     {
-      "source": "/guides/codespace?step=1",
+      "source": "/guides/codespace-qs?step=1",
       "destination": "/guides/duckdb?step=1",
       "permanent": true
     },

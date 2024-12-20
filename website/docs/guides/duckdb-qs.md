@@ -68,6 +68,7 @@ The `requirements.txt` file is placed at the top level of your dbt project direc
 For more information on the setup of DuckDB, you can refer to [DuckDB setup](/docs/core/connect-data-platform/duckdb-setup).
 
 <Tabs>
+  <TabItem value="local" label="Local">
 
 <TabItem value="local" label="Local">
 

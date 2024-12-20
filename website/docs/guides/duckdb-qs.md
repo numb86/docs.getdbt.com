@@ -165,7 +165,9 @@ Here's what a successful output will look like:
 15:10:15  Completed successfully
 15:10:15  
 15:10:15  Done. PASS=28 WARN=0 ERROR=0 SKIP=0 TOTAL=28
-    
+
+```
+
 For complete details, refer to the [dbt command reference](/reference/dbt-commands).
 
 :::note

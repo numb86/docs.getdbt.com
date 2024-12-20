@@ -87,7 +87,7 @@ Learn more about [dbt Cloud features](/docs/cloud/about-cloud/dbt-cloud-feature
 <Card
     title="Quickstart for dbt Core using DuckDB"
     body="Learn how to connect to DuckDB."
-    link="https://docs.getdbt.com//guides/duckdb?step=1"
+    link="https://docs.getdbt.com/guides/duckdb-qs?step=1"
     icon="duckdb"/>
 </div>
 

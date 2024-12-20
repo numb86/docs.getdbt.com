@@ -194,7 +194,6 @@ The steps will fail if you decide to run this project in your data warehouse (ou
 
 
   </TabItem>
-</Tabs>
  
 <TabItem value="web" label="Web browser">
 

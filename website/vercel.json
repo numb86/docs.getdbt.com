@@ -3,13 +3,18 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/guides/codespace",
-      "destination": "/guides/duckdb",
+      "source": "/faqs/API/rotate-token",
+      "destination": "/docs/dbt-cloud-apis/service-tokens#service-token-update",
       "permanent": true
     },
     {
-      "source": "/guides/codespace-qs?step=1",
-      "destination": "/guides/duckdb-qs?step=1",
+      "source": "/styles",
+      "destination": "https://github.com/dbt-labs/docs.getdbt.com/blob/current/contributing/adding-page-components.md",
+      "permanent": true
+    },
+    {
+      "source": "/guides/codespace",
+      "destination": "/guides/duckdb",
       "permanent": true
     },
     {

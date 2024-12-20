@@ -223,6 +223,7 @@ The steps will fail if you decide to run this project in your data warehouse (ou
 
 
   </TabItem>
+</Tabs>
 
   </Tabs>
 

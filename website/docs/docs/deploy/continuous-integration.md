@@ -40,7 +40,6 @@ If your git provider has a native dbt Cloud integration, you can set up [continu
 
 
 
-import TiggeraCIJob from '/snippets/_trigger-a-ci-job.md';
 
 <TiggeraCIJob />
 

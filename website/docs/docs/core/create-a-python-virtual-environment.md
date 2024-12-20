@@ -17,9 +17,9 @@ Users who want to run dbt locally, for example in [dbt Core](/docs/core/installa
 
 ## Prerequisites
 
+- Access to a terminal or command prompt.
 - Have [Python](https://www.python.org/downloads/) installed on your machine. You can check if Python is installed by running `python --version` or `python3 --version` in your terminal or command prompt.
 - Have [pip installed](https://pip.pypa.io/en/stable/installation/). You can check if pip is installed by running `pip --version` or `pip3 --version`.
-- Access to a terminal or command prompt.
 - Have the necessary permissions to create directories and install packages on your machine.
 
 ## Install a Python virtual environment 
@@ -28,40 +28,43 @@ Depending on the operating system you use, you'll need to execute specific steps
 
 To install a Python virtual environment, navigate to your project directory and execute the command. This will generate a new virtual environment within a local folder named `venv`:
 
-<Expandable alt_header="Unix/macOS" >
+<Tabs>
+  <TabItem value="Unix/macOS" label="Unix/macOS">
+    1. Create your virtual environment
 
-1. Create your virtual environment
+    ```shell
+    python3 -m venv .venv
+    ```
 
-```shell
-python3 -m venv .venv
-```
+    2. Activate your virtual environment:
 
-2. Activate your virtual environment:
+    ```shell
+    source .venv/bin/activate
+    which python
+    .venv/bin/python
+    ```
+  </TabItem>
 
-```shell
-source .venv/bin/activate
-which python
-.venv/bin/python
-```
-</Expandable>
+  <TabItem value="Windows" label="Windows">
+    1. Create your virtual environment
 
-<Expandable alt_header="Windows" >
+    ```shell
+    py -m venv .venv
+    ```
 
-1. Create your virtual environment
+    2. Activate your virtual environment:
 
-```shell
-py -m venv .venv
-```
+    ```shell
+    .venv\Scripts\activate
+    where python
+    .venv\Scripts\python
+    ```
+  </TabItem>
+</Tabs>
 
-2. Activate your virtual environment:
+If you're using dbt Core, refer to [What are the best practices for installing dbt Core with pip?](/faqs/Core/install-pip-best-practices.md#using-virtual-environments) after creating your virtual environment. 
 
-```shell
-.venv\Scripts\activate
-where python
-.venv\Scripts\python
-```
-
-</Expandable>
+If you're using the dbt Cloud CLI, you can [install dbt Cloud CLI in pip](/docs/cloud/cloud-cli-installation#install-dbt-cloud-cli-in-pip) after creating your virtual environment.
 
 ## Deactivate virtual environment
 

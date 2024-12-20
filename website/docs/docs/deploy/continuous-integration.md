@@ -29,23 +29,9 @@ dbt Cloud deletes the temporary schema from your <Term id="data-warehouse" /> w
 
 ## Git providers who support CI
 
-If your git provider has a native dbt Cloud integration, you can set up continuous integration (CI) jobs within dbt Cloud.
+import GitProvidersCI from '/snippets/_git-providers-supporting-ci.md';
 
-| **Git provider** | **Native dbt Cloud integration** |[**Automated CI job**](/docs/deploy/ci-jobs)|**Git import with URL**| **Information**|
-| -----------------| ---------------------------------| -------------------------------------------|-----------------------|---------|
-|[Azure DevOps](/docs/cloud/git/setup-azure) <Lifecycle status="enterprise" />|  ✅|  ✅ |  ✅  | Organizations on the Team Plan can connect to Azure DeveOps via deploy key. Note, you won’t get the automated CI jobs but you can still develop.|
-|[GitHub](/docs/cloud/git/connect-github) <Lifecycle status="developer,team,enterprise" /> | ✅ | ✅ |  ✅         |                                  
-|[GitLab](/docs/cloud/git/connect-gitlab) <Lifecycle status="developer,team,enterprise" /> | ✅ | ✅ |  ✅         |
-|All other git providers imported with a [git URL](/docs/cloud/git/import-a-project-by-git-url) ([BitBucket](/docs/cloud/git/import-a-project-by-git-url#bitbucket), [AWS CodeCommit](/docs/cloud/git/import-a-project-by-git-url#aws-codecommit), and others)| ❌    | ❌    | ✅   | Bitbucket doesn’t have a native dbt Cloud integration, refer to the [Customizing CI/CD with custom pipelines](/guides/custom-cicd-pipelines?step=1) guide to set up continuous integration and continuous deployment (CI/CD).|
-
-
-### No native integration
-
-import TiggeraCIJob from '/snippets/_trigger-a-ci-job.md';
-
-<TiggeraCIJob />
-
-
+<GitProvidersCI />
 
 
 ## Differences between CI jobs and other deployment jobs

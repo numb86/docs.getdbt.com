@@ -29,7 +29,7 @@ dbt Cloud deletes the temporary schema from your <Term id="data-warehouse" /> w
 
 ## Git providers who support CI
 
-If your git provider has a native dbt Cloud integration, you can set up continuous integration (CI) jobs within dbt Cloud.
+If your git provider has a native dbt Cloud integration, you can set up [continuous integration (CI) job](/docs/deploy/ci-jobs) within dbt Cloud.
 
 | **Git provider** | **Native dbt Cloud integration** |**Automated CI job** |**Git import with URL**| **Information**|
 | -----------------| ---------------------------------| -------------------------------------------|-----------------------|---------|

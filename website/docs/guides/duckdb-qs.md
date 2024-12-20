@@ -194,7 +194,7 @@ The steps will fail if you decide to run this project in your data warehouse (ou
 
   </TabItem>
  
-   <TabItem value="web" label="Web browser">
+  <TabItem value="web" label="Web browser">
 
 1. Go to the `jaffle-shop-template` [repository](https://github.com/dbt-labs/jaffle_shop_duckdb) after you log in to your GitHub account. 
 1. Click **Use this template** at the top of the page and choose **Create new repository**.

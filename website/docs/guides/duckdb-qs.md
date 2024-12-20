@@ -225,10 +225,8 @@ The steps will fail if you decide to run this project in your data warehouse (ou
 
 
   </TabItem>
+
 </Tabs>
-
-  </Tabs>
-
 
 Here's what a successful output will look like:
 

@@ -1,8 +1,8 @@
-If your git provider has a native dbt Cloud integration, you can set up continuous integration (CI) jobs within dbt Cloud.
+If your git provider has a native dbt Cloud integration, you can set up [continuous integration (CI) job](/docs/deploy/ci-jobs) within dbt Cloud. For providers without native integration, you can still use a Git URL. The following table explains the available integration options and their capabilities.
 
-| **Git provider** | **Native dbt Cloud integration** |[**Automated CI job**](/docs/deploy/ci-jobs)|**Git import with URL**| **Information**|
+| **Git provider** | **Native dbt Cloud integration** | **Automated CI job**|**Git import with URL**| **Information**|
 | -----------------| ---------------------------------| -------------------------------------------|-----------------------|---------|
-|[Azure DevOps](/docs/cloud/git/setup-azure) <Lifecycle status="enterprise" />|  ✅|  ✅ |  ✅  | Organizations on the Team Plan can connect to Azure DeveOps via deploy key. Note, you won’t get the automated CI jobs but you can still develop.|
-|[GitHub](/docs/cloud/git/connect-github) <Lifecycle status="developer,team,enterprise" /> | ✅ | ✅ |  ✅         |                                  
-|[GitLab](/docs/cloud/git/connect-gitlab) <Lifecycle status="developer,team,enterprise" /> | ✅ | ✅ |  ✅         |
-|All other git providers imported with a [git URL](/docs/cloud/git/import-a-project-by-git-url) ([BitBucket](/docs/cloud/git/import-a-project-by-git-url#bitbucket), [AWS CodeCommit](/docs/cloud/git/import-a-project-by-git-url#aws-codecommit), and others)| ❌    | ❌    | ✅   | Bitbucket doesn’t have a native dbt Cloud integration, refer to the [Customizing CI/CD with custom pipelines](/guides/custom-cicd-pipelines?step=1) guide to set up continuous integration and continuous deployment (CI/CD). |
+|[Azure DevOps](/docs/cloud/git/setup-azure)<br /> <Lifecycle status="enterprise" />|  ✅|  ✅ |  ✅  | Organizations on the Team Plan can connect to Azure DeveOps via deploy key. Note, you won’t get the automated CI jobs but you can still develop.|
+|[GitHub](/docs/cloud/git/connect-github)<br /> <Lifecycle status="developer,team,enterprise" /> | ✅ | ✅ |  ✅         |                                  
+|[GitLab](/docs/cloud/git/connect-gitlab)<br /> <Lifecycle status="developer,team,enterprise" /> | ✅ | ✅ |  ✅         |
+|All other git providers imported with a [git URL](/docs/cloud/git/import-a-project-by-git-url) ([BitBucket](/docs/cloud/git/import-a-project-by-git-url#bitbucket), [AWS CodeCommit](/docs/cloud/git/import-a-project-by-git-url#aws-codecommit), and others)| ❌    | ❌    | ✅   | Refer to the [Customizing CI/CD with custom pipelines](/guides/custom-cicd-pipelines?step=1) guide to set up continuous integration and continuous deployment (CI/CD).|

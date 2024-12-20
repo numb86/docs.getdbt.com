@@ -20,6 +20,8 @@ exports.versions = [
   },
   {
     version: "1.9",
+    customDisplay: "1.9 (Compatible)",
+    EOLDate: "2025-12-08",
   },
   {
     version: "1.8",

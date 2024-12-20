@@ -140,6 +140,10 @@ If you use Azure DevOps and you are on the dbt Cloud Enterprise plan, you can im
 
 <Lightbox src="/img/docs/dbt-cloud/cloud-configuring-dbt-cloud/d19f199-Screen_Shot_2020-03-09_at_4.13.50_PM.png" title="Enter and save the public key generated for your repository by dbt Cloud" />
 
+import GitProvidersCI from '/snippets/_git-providers-supporting-ci.md';
+
+<GitProvidersCI />
+
 ## Other git providers
 
 Don't see your git provider here? Please [contact dbt Support](mailto:support@getdbt.com) - we're happy to help you set up dbt Cloud with any supported git provider.

@@ -1,3 +1,5 @@
+## Git providers who support CI
+
 If your git provider has a native dbt Cloud integration, you can set up [continuous integration (CI) job](/docs/deploy/ci-jobs) within dbt Cloud. For providers without native integration, you can still use a Git URL. The following table explains the available integration options and their capabilities.
 
 | **Git provider** | **Native dbt Cloud integration** | **Automated CI job**|**Git import with URL**| **Information**|

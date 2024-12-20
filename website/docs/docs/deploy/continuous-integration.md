@@ -27,8 +27,6 @@ When the CI run completes, you can view the run status directly from within the 
 
 dbt Cloud deletes the temporary schema from your <Term id="data-warehouse" /> when you close or merge the pull request. If your project has schema customization using the [generate_schema_name](/docs/build/custom-schemas#how-does-dbt-generate-a-models-schema-name) macro, dbt Cloud might not drop the temporary schema from your data warehouse. For more information, refer to [Troubleshooting](/docs/deploy/ci-jobs#troubleshooting).
 
-## Git providers who support CI
-
 import GitProvidersCI from '/snippets/_git-providers-supporting-ci.md';
 
 <GitProvidersCI />

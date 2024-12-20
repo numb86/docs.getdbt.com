@@ -193,7 +193,8 @@ The steps will fail if you decide to run this project in your data warehouse (ou
     </Expandable>
 
 
-</TabItem>
+  </TabItem>
+</Tabs>
  
 <TabItem value="web" label="Web browser">
 

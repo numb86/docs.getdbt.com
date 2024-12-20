@@ -31,7 +31,7 @@ dbt Cloud deletes the temporary schema from your <Term id="data-warehouse" /> w
 
 If your git provider has a native dbt Cloud integration, you can set up continuous integration (CI) jobs within dbt Cloud.
 
-| **Git provider** | **Native dbt Cloud integration** |[**Automated CI job**](/docs/deploy/ci-jobs)|**Git import with URL**| **Information**|
+| **Git provider** | **Native dbt Cloud integration** |**Automated CI job** |**Git import with URL**| **Information**|
 | -----------------| ---------------------------------| -------------------------------------------|-----------------------|---------|
 |[Azure DevOps](/docs/cloud/git/setup-azure) <Lifecycle status="enterprise" />|  ✅|  ✅ |  ✅  | Organizations on the Team Plan can connect to Azure DeveOps via deploy key. Note, you won’t get the automated CI jobs but you can still develop.|
 |[GitHub](/docs/cloud/git/connect-github) <Lifecycle status="developer,team,enterprise" /> | ✅ | ✅ |  ✅         |                                  

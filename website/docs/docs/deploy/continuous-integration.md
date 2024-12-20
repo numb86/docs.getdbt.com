@@ -38,7 +38,6 @@ If your git provider has a native dbt Cloud integration, you can set up [continu
 |[GitLab](/docs/cloud/git/connect-gitlab)<br /> <Lifecycle status="developer,team,enterprise" /> | ✅ | ✅ |  ✅         |
 |All other git providers imported with a [git URL](/docs/cloud/git/import-a-project-by-git-url) ([BitBucket](/docs/cloud/git/import-a-project-by-git-url#bitbucket), [AWS CodeCommit](/docs/cloud/git/import-a-project-by-git-url#aws-codecommit), and others)| ❌    | ❌    | ✅   | Refer to the [Customizing CI/CD with custom pipelines](/guides/custom-cicd-pipelines?step=1) guide to set up CI/CD.|
 
-import TiggeraCIJob from '/snippets/_trigger-a-ci-job.md';
 <TiggeraCIJob />
 
 

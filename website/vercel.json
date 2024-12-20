@@ -3,18 +3,8 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/guides/codespace-qs?step=4",
-      "destination": "/guides/duckdb-qs?step=3",
-      "permanent": true
-    },
-    {
-      "source": "/guides/codespace-qs?step=3",
-      "destination": "/guides/duckdb-qs?step=2",
-      "permanent": true
-    },
-    {
-      "source": "/guides/codespace-qs?step=2",
-      "destination": "/guides/duckdb-qs?step=1",
+      "source": "/guides/codespace",
+      "destination": "/guides/duckdb",
       "permanent": true
     },
     {

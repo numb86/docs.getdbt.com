@@ -35,7 +35,7 @@ If your git provider has a native dbt Cloud integration, you can set up [continu
 | -----------------| ---------------------------------| -------------------------------------------|-----------------------|---------|
 |[Azure DevOps](/docs/cloud/git/setup-azure)<br /> <Lifecycle status="enterprise" />|  ✅|  ✅ |  ✅  | Organizations on the Team Plan can connect to Azure DeveOps via deploy key. Note, you won’t get the automated CI jobs but you can still develop.|
 |[GitHub](/docs/cloud/git/connect-github)<br /> <Lifecycle status="developer,team,enterprise" /> | ✅ | ✅ |  ✅         |                                  
-|[GitLab](/docs/cloud/git/connect-gitlab) <Lifecycle status="developer,team,enterprise" /> | ✅ | ✅ |  ✅         |
+|[GitLab](/docs/cloud/git/connect-gitlab)<br /> <Lifecycle status="developer,team,enterprise" /> | ✅ | ✅ |  ✅         |
 |All other git providers imported with a [git URL](/docs/cloud/git/import-a-project-by-git-url) ([BitBucket](/docs/cloud/git/import-a-project-by-git-url#bitbucket), [AWS CodeCommit](/docs/cloud/git/import-a-project-by-git-url#aws-codecommit), and others)| ❌    | ❌    | ✅   | Refer to the [Customizing CI/CD with custom pipelines](/guides/custom-cicd-pipelines?step=1) guide to set up CI/CD.|
 
 

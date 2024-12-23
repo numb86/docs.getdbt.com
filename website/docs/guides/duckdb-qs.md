@@ -230,7 +230,6 @@ The steps will fail if you decide to run this project in your data warehouse (ou
 
 
 
-(venv) ➜  jaffle_shop_duckdb git:(duckdb) dbt build
 15:10:12  Running with dbt=1.8.1
 15:10:13  Registered adapter: duckdb=1.8.1
 15:10:13  Found 5 models, 3 seeds, 20 data tests, 416 macros

@@ -213,7 +213,7 @@ The steps will fail if you decide to run this project in your data warehouse (ou
     /workspaces/test (main) $ dbt build
     ```
 
-    You can also use the [duckcli](https://github.com/dbcli/duckcli) to write SQL against the warehouse from the command line or build reports in the [Evidence](https://evidence.dev/) project provided in the `reports` directory.
+    You can also use the [duckcli](https://duckdb.org/docs/api/cli/overview.html) to write SQL against the warehouse from the command line or build reports in the [Evidence](https://evidence.dev/) project provided in the `reports` directory.
     
     For complete information, refer to the [dbt command reference](https://docs.getdbt.com/reference/dbt-commands). Common commands are:
     

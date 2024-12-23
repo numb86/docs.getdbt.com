@@ -1,6 +1,10 @@
 ## Git providers who support CI
 
-If your git provider has a native dbt Cloud integration, you can set up [continuous integration (CI) job](/docs/deploy/ci-jobs) within dbt Cloud. For providers without native integration, you can still use a Git URL. The following table explains the available integration options and their capabilities.
+- If your git provider has a [native dbt Cloud integration](/docs/cloud/git/git-configuration-in-dbt-cloud), you can seamlessly set up [continuous integration (CI)](/docs/deploy/ci-jobs) jobs directly within dbt Cloud. 
+
+- For providers without native integration, you can still use the git clone method to import your git URL or leverage the [dbt Cloud Administrative API](/docs/dbt-cloud-apis/admin-cloud-api) to trigger a ci job to run.
+
+The following table outlines the available integration options and their corresponding capabilities.
 
 | **Git provider** | **Native dbt Cloud integration** | **Automated CI job**|**Git import with URL**| **Information**|
 | -----------------| ---------------------------------| -------------------------------------------|-----------------------|---------|
@@ -8,3 +12,4 @@ If your git provider has a native dbt Cloud integration, you can set up [continu
 |[GitHub](/docs/cloud/git/connect-github)<br /> <Lifecycle status="developer,team,enterprise" /> | ✅ | ✅ |  ✅         |                                  
 |[GitLab](/docs/cloud/git/connect-gitlab)<br /> <Lifecycle status="developer,team,enterprise" /> | ✅ | ✅ |  ✅         |
 |All other git providers imported with a [git URL](/docs/cloud/git/import-a-project-by-git-url) ([BitBucket](/docs/cloud/git/import-a-project-by-git-url#bitbucket), [AWS CodeCommit](/docs/cloud/git/import-a-project-by-git-url#aws-codecommit), and others)| ❌    | ❌    | ✅   | Refer to the [Customizing CI/CD with custom pipelines](/guides/custom-cicd-pipelines?step=1) guide to set up continuous integration and continuous deployment (CI/CD).|
+

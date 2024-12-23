@@ -168,7 +168,6 @@ Here's what a successful output will look like:
 
 ```
 
-For complete details, refer to the [dbt command reference](/reference/dbt-commands).
 
 :::note
 

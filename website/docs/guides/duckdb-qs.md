@@ -132,7 +132,7 @@ For more information on the setup of DuckDB, you can refer to [DuckDB setup](/do
     </Expandable>
 
 
-4. Ensure your profile is setup correctly from the command line by running the following:
+4. Ensure your profile is setup correctly from the command line by running the following [dbt commands](/reference/dbt-commands).
 
 
     - [dbt compile](https://docs.getdbt.com/reference/commands/compile) &mdash; generates executable SQL from your project source files

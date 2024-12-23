@@ -231,7 +231,6 @@ The steps will fail if you decide to run this project in your data warehouse (ou
 
 
 
-15:10:15  Completed successfully
 15:10:15  
 15:10:15  Done. PASS=28 WARN=0 ERROR=0 SKIP=0 TOTAL=28
 

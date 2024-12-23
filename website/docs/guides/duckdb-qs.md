@@ -230,7 +230,6 @@ The steps will fail if you decide to run this project in your data warehouse (ou
 
 
 
-15:10:14  
 15:10:14  1 of 28 START seed file main.raw_customers ..................................... [RUN]
 15:10:14  2 of 28 START seed file main.raw_orders ........................................ [RUN]
 15:10:14  3 of 28 START seed file main.raw_payments ...................................... [RUN]

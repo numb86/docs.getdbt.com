@@ -230,7 +230,6 @@ The steps will fail if you decide to run this project in your data warehouse (ou
 
 
 
-15:10:13  Found 5 models, 3 seeds, 20 data tests, 416 macros
 15:10:13  
 15:10:14  Concurrency: 24 threads (target='dev')
 15:10:14  

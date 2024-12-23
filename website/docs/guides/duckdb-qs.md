@@ -230,7 +230,6 @@ The steps will fail if you decide to run this project in your data warehouse (ou
 
 
 
-....
 
 15:10:15  27 of 28 PASS relationships_orders_customer_id__customer_id__ref_customers_ .... [PASS in 0.32s]
 15:10:15  

@@ -217,7 +217,7 @@ The steps will fail if you decide to run this project in your data warehouse (ou
     
     For complete information, refer to the [dbt command reference](https://docs.getdbt.com/reference/dbt-commands). Common commands are:
     
-    - [dbt compile](https://docs.getdbt.com/reference/commands/compile) &mdash; generates executable SQL from your project source files
+    - [dbt compile](/reference/commands/compile) &mdash; generates executable SQL from your project source files
     - [dbt run](https://docs.getdbt.com/reference/commands/run) &mdash; compiles and runs your project
     - [dbt test](https://docs.getdbt.com/reference/commands/test) &mdash; compiles and tests your project
     - [dbt build](https://docs.getdbt.com/reference/commands/build) &mdash; compiles, runs, and tests your project

@@ -141,7 +141,7 @@ For more information on the setup of DuckDB, you can refer to [DuckDB setup](/do
     - [dbt build](https://docs.getdbt.com/reference/commands/build) &mdash; compiles, runs, and tests your project
     - [dbt docs generate](/reference/commands/cmd-docs#dbt-docs-generate) &mdash; generates your project's documentation.
     - [dbt docs serve](/reference/commands/cmd-docs#dbt-docs-serve) &mdash; starts a webserver on port 8080 to serve your documentation locally and opens the documentation site in your default browser.
-
+For complete details, refer to the [dbt command reference](/reference/dbt-commands).
 Here's what a successful output will look like:
 
 ```jinja

@@ -10,7 +10,7 @@ A Python virtual environment is an isolated workspace for Python projects. This 
 
 The Python ecosystem offers several tools for creating isolated environments, such as [conda](https://anaconda.org/anaconda/conda), [poetry](https://python-poetry.org/docs/managing-environments/), and `venv`. Among these, `venv` has the fewest additional dependencies and has been included by default in recent Python versions for quite some time.
 
-`venv` will set up a Python virtual environment within the `.venv` folder.
+`venv` will set up a Python virtual environment within the `env` folder.
 
 Users who want to run dbt locally, for example in [dbt Core](/docs/core/installation-overview) or the [dbt Cloud CLI](/docs/cloud/cloud-cli-installation#install-a-virtual-environment) may want to install a Python virtual environment. 
 

@@ -35,7 +35,6 @@ You can learn more through high-quality [dbt Learn courses and workshops](https:
 - [Create a GitHub repository](/guides/manual-install?step=2)
 - [Build your first models](/guides/manual-install?step=3)
 - [Test and document your project](/guides/manual-install?step=4)
-- [Schedule a job](/guides/manual-install?step=5)
 
 
 ## Prerequisites

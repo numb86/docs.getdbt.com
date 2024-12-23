@@ -41,7 +41,7 @@ To install a Python virtual environment, navigate to your project directory and 
     ```shell
     source env/bin/activate
     which python
-    .venv/bin/python
+    env/bin/python
     ```
   </TabItem>
 

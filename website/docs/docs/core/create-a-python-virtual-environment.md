@@ -49,7 +49,7 @@ To install a Python virtual environment, navigate to your project directory and 
     1. Create your virtual environment
 
     ```shell
-    py -m venv .venv
+    py -m venv env
     ```
 
     2. Activate your virtual environment:

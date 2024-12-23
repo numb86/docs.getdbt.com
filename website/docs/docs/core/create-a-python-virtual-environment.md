@@ -33,7 +33,7 @@ To install a Python virtual environment, navigate to your project directory and 
     1. Create your virtual environment
 
     ```shell
-    python3 -m venv .venv
+    python3 -m venv env
     ```
 
     2. Activate your virtual environment:

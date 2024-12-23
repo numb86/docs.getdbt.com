@@ -55,7 +55,7 @@ To install a Python virtual environment, navigate to your project directory and 
     2. Activate your virtual environment:
 
     ```shell
-    .venv\Scripts\activate
+    env\Scripts\activate
     where python
     .venv\Scripts\python
     ```

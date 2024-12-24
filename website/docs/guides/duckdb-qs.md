@@ -263,7 +263,7 @@ Now that you've got dbt Core, DuckDB, and the Jaffle Shop data up and running, y
 - Once you see the potential of dbt and what it can do for your organization, sign up for a free trial of [dbt Cloud](https://www.getdbt.com/signup). It's the fastest and easiest way to deploy dbt today!
 - Check out the other [quickstart guides](/quickstarts) to begin integrating into your existing data warehouse.
 
-Additionally, with your new understanding of the basics of using dbt Core with DuckDB, consider optimizing your setup by documenting a project, committing changes and, scheduling a job. 
+Additionally, with your new understanding of the basics of using dbt Core with DuckDB, consider optimizing your setup by documenting a project, committing your changes and, scheduling a job. 
 
 ### Document a job
 

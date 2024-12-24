@@ -64,7 +64,7 @@ The `requirements.txt` file is placed at the top level of your dbt project direc
 
 ```
 
-For more information on the setup of DuckDB, you can refer to [DuckDB setup](/docs/core/connect-data-platform/duckdb-setup).
+For more information, refer to the [DuckDB setup](/docs/core/connect-data-platform/duckdb-setup).
 
 <Tabs>
   <TabItem value="local" label="Local">
@@ -140,7 +140,9 @@ For more information on the setup of DuckDB, you can refer to [DuckDB setup](/do
     - [dbt build](https://docs.getdbt.com/reference/commands/build) &mdash; compiles, runs, and tests your project
     - [dbt docs generate](/reference/commands/cmd-docs#dbt-docs-generate) &mdash; generates your project's documentation.
     - [dbt docs serve](/reference/commands/cmd-docs#dbt-docs-serve) &mdash; starts a webserver on port 8080 to serve your documentation locally and opens the documentation site in your default browser.
+
 For complete details, refer to the [dbt command reference](/reference/dbt-commands).
+
 Here's what a successful output will look like:
 
 ```jinja
@@ -255,7 +257,7 @@ If you'd like to work with a larger selection of Jaffle Shop data, you can gener
 As you increase the number of years, it takes exponentially more time to generate the data because the Jaffle Shop stores grow in size and number. For a good balance of data size and time to build, dbt Labs suggests a maximum of 6 years.
 ## Next steps
 
-Now that you've got dbt Core, DuckDB, and the Jaffle Shop data up and running, you can explore dbt's capabilities. Refer to these materials to get a better understanding of dbt projects and commands:
+Now that you have dbt Core, DuckDB, and the Jaffle Shop data up and running, you can explore dbt's capabilities. Refer to these materials to get a better understanding of dbt projects and commands:
 
 - The [About projects](/docs/build/projects) page guides you through the structure of a dbt project and its components.
 - [dbt command reference](/reference/dbt-commands) explains the various commands available and what they do.
@@ -263,7 +265,7 @@ Now that you've got dbt Core, DuckDB, and the Jaffle Shop data up and running, y
 - Once you see the potential of dbt and what it can do for your organization, sign up for a free trial of [dbt Cloud](https://www.getdbt.com/signup). It's the fastest and easiest way to deploy dbt today!
 - Check out the other [quickstart guides](/quickstarts) to begin integrating into your existing data warehouse.
 
-Additionally, with your new understanding of the basics of using dbt Core with DuckDB, consider optimizing your setup by documenting your project, committing your changes and, scheduling a job. 
+Additionally, with your new understanding of the basics of using DuckDB, consider optimizing your setup by [documenting your project](/guides/duckdb#document-your-project), [commit your changes](/guides/duckdb#commit-your-changes) and, [schedule a job](/guides/duckdb#schedule-a-job). 
 
 ### Document your project
 
@@ -277,13 +279,15 @@ To document your dbt projects with DuckDB, follow the steps:
 
 Commit your changes to ensure the repository is up to date with the latest code.
 
-In the GitHub repository you created for your project, run the following commands in the terminal.
+1. In the GitHub repository you created for your project, run the following commands in the terminal:
 
 ```shell
 git add 
 git commit -m "Your commit message"
 git push
 ```
+
+2. Go back to your GitHub repository to verify your new files have been added.
 
 ### Schedule a job
 
@@ -293,11 +297,13 @@ git push
 4. Write a script that runs your dbt commands, such as [`dbt run`](/reference/commands/run), `dbt test` and more so.
 5. Use your chosen scheduler to run the script at your desired frequency.
 
+<ConfettiTrigger>
 
-1. Ensure dbt Core is installed and configured to connect to your DuckDB instance.
-2. Create a dbt project and define your [`models`](/docs/build/models), [`seeds`](/reference/seed-properties), and [`tests`](/reference/commands/test).
-3. Use a scheduler such [Prefect](/docs/deploy/deployment-tools#prefect) to schedule your dbt runs. You can create a DAG (Directed Acyclic Graph) that triggers dbt commands at specified intervals.
-4. Write a script that runs your dbt commands, such as [`dbt run`](/reference/commands/run), `dbt test` and more so.
-5. Use your chosen scheduler to run the script at your desired frequency.
+Congratulations on making it through the guide 🎉!
+
+</ConfettiTrigger>
 
 </div>
+
+
+

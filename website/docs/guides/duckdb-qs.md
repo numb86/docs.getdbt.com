@@ -248,7 +248,7 @@ If you'd like to work with a larger selection of Jaffle Shop data, you can gener
 
 1. When installation is done, run:
     ```shell
-    /workspaces/test (main) $ jafgen --years NUMBER_OF_YEARS
+    jafgen [number of years to generate] # e.g. jafgen 6
     ``` 
     Replace `NUMBER_OF_YEARS` with the number of years you want to simulate. This command builds the CSV files and stores them in the `jaffle-data` folder, and is automatically sourced based on the `sources.yml` file and the [dbt-duckdb](/docs/core/connect-data-platform/duckdb-setup) adapter.
 

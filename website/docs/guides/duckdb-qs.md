@@ -293,4 +293,11 @@ git push
 4. Write a script that runs your dbt commands, such as [`dbt run`](/reference/commands/run), `dbt test` and more so.
 5. Use your chosen scheduler to run the script at your desired frequency.
 
+
+1. Ensure dbt Core is installed and configured to connect to your DuckDB instance.
+2. Create a dbt project and define your [`models`](/docs/build/models), [`seeds`](/reference/seed-properties), and [`tests`](/reference/commands/test).
+3. Use a scheduler such [Prefect](/docs/deploy/deployment-tools#prefect) to schedule your dbt runs. You can create a DAG (Directed Acyclic Graph) that triggers dbt commands at specified intervals.
+4. Write a script that runs your dbt commands, such as [`dbt run`](/reference/commands/run), `dbt test` and more so.
+5. Use your chosen scheduler to run the script at your desired frequency.
+
 </div>

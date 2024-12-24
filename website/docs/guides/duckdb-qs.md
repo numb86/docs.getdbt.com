@@ -269,7 +269,16 @@ Additionally, with your new understanding of the basics of using dbt Core with D
 
 
 
-### Commit changes
+### Commit your changes
+
+Commit your changes to ensure the repository is up to date with the latest code.
+
+In the GitHub repository you created for your project, run the following commands in Terminal.
+
+```shell
+git add 
+git commit -m "Your commit message"
+git push
 
 
 ### Schedule a job

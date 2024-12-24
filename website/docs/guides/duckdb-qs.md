@@ -267,7 +267,11 @@ Additionally, with your new understanding of the basics of using dbt Core with D
 
 ### Document your project
 
+To document your dbt projects with DuckDB, follow the steps:
 
+- Use the `dbt docs generate` command to compile information about your dbt project and warehouse into `manifest.json` and `catalog.json` files
+- Run the [`dbt docs serve`](/reference/commands/cmd-docs#dbt-docs-serve) command to create a local website using the generated `.json` files. This allows you to view your project's documentation in a web browser.
+- Enhance your documentation by adding [descriptions](/reference/resource-properties/description) to models, columns, and sources using the `description` key in your YAML files.
 
 ### Commit your changes
 

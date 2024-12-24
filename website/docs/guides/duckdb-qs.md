@@ -166,7 +166,11 @@ Here's what a successful output will look like:
 15:10:15  Done. PASS=28 WARN=0 ERROR=0 SKIP=0 TOTAL=28
 
 ```
+To query data, some useful commands you can run from the command line: 
 
+- [`dbt show`](/reference/commands/show) &mdash; run a query against the data warehouse and preview the results in the terminal.
+- [`dbt source`](/reference/commands/source) &mdash; provides subcommands such as [`dbt source freshness`](/reference/commands/source#dbt-source-freshness) that are useful when working with source data. 
+   - `dbt source freshness` &mdash; checks the freshness (how up to date) a specific source table is.
 
 :::note
 

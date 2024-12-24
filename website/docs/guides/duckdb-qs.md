@@ -253,5 +253,16 @@ If you'd like to work with a larger selection of Jaffle Shop data, you can gener
     Replace `NUMBER_OF_YEARS` with the number of years you want to simulate. This command builds the CSV files and stores them in the `jaffle-data` folder, and is automatically sourced based on the `sources.yml` file and the [dbt-duckdb](/docs/core/connect-data-platform/duckdb-setup) adapter.
 
 As you increase the number of years, it takes exponentially more time to generate the data because the Jaffle Shop stores grow in size and number. For a good balance of data size and time to build, dbt Labs suggests a maximum of 6 years.
+## Next steps
 
+Now that you understand the basics of using dbt Core with DuckDB, consider optimizing your setup by documenting a project, committing changes and, scheduling a job. 
+
+### Document a job
+
+
+
+### Commit changes
+
+
+### Schedule a job
 </div>

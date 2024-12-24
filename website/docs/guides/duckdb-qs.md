@@ -265,7 +265,7 @@ Now that you've got dbt Core, DuckDB, and the Jaffle Shop data up and running, y
 
 Additionally, with your new understanding of the basics of using dbt Core with DuckDB, consider optimizing your setup by documenting a project, committing your changes and, scheduling a job. 
 
-### Document a job
+### Document your project
 
 
 
